@@ -1,0 +1,144 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+body {
+  background: #b07cf7;
+  padding: 92px 165px;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.container__heading {
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 106px;
+}
+
+.container__text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  width: 40%;
+  text-align: center;
+  margin-top: 30px;
+}
+.container__cards {
+  margin: 50px auto;
+}
+.cards__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.cards__item:not(:last-child) {
+  margin-right: 30px;
+}
+.card {
+  position: relative;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.card__img {
+  object-fit: cover;
+}
+.card__heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+.card__info {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+}
+.card__text {
+  position: absolute;
+  top: 209px;
+  left: 20px;
+  padding-bottom: 20px;
+}
+
+.card::before {
+  content: "";
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  top: 50%;
+}
+
+.card__date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.date {
+  background: rgba(38, 38, 38, 0.5);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 9px 7px;
+}
+
+.date__day {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 19px;
+  margin-bottom: 9px;
+}
+
+.date__month {
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+}
+
+.button {
+  background: #f72b3b;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+
+  color: #fff;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  padding: 16px 43px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #ff0015;
+}
+
+.button:active {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
